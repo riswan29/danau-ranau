@@ -15,6 +15,7 @@
 
    <!-- custom css file link  -->
    <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/bot.css">
 
 </head>
 
@@ -299,10 +300,19 @@
 
 
 
-
-
-
-
+<!-- bot -->
+<section>
+   <i class="fa fa-comment "></i>
+<img src="images/bot.png" alt="" class="chat-icon" width="50px" height="50px"">
+<div class="chat-popup">
+  <form class="chat-form" onsubmit="return submitForm(event)">
+    <input type="text" id="chat-input" placeholder="Tulis pesan anda disini...">
+    <button type="submit">Kirim</button>
+  </form>
+  <div id="chat-response"></div>
+</div>
+<!-- bot -->
+</section>
    <!-- footer section starts  -->
 
    <section class="footer">
@@ -323,7 +333,7 @@
             <h3>contact info</h3>
             <a href="#"> <i class="fas fa-phone"></i> +62 823-9282-3072 </a>
             <a href="#"> <i class="fas fa-phone"></i> +62 823-9282-3072 </a>
-            <a href="#"> <i class="fas fa-envelope"></i> 191410043@student.binadarma.ac.id </a>
+            <a href="#"> <i class="fas fa-envelope"></i> Indahhusnul9@gmail.com </a>
             <a href="#"> <i class="fas fa-map"></i> danau ranau, sumatera selatan </a>
          </div>
 
@@ -356,6 +366,7 @@
 
    <!-- custom js file link  -->
    <script src="js/script.js"></script>
+   <script src="js/bot.js"></script>
 
 </body>
 

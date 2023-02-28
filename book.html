@@ -14,6 +14,7 @@
 
    <!-- custom css file link  -->
    <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/bot.css">
 
 </head>
 <body>
@@ -108,51 +109,58 @@
 
 
 
-<!-- footer section starts  -->
-
-<section class="footer">
-
-   <div class="box-container">
-
-      <div class="box">
-         <h3>quick links</h3>
-         <a href="home.html"> <i class="fas fa-angle-right"></i> home</a>
-         <a href="about.html"> <i class="fas fa-angle-right"></i> about</a>
-         <a href="package.html"> <i class="fas fa-angle-right"></i> package</a>
-         <a href="book.html"> <i class="fas fa-angle-right"></i> book</a>
-      </div>
-
-      <div class="box">
-         <h3>extra links</h3>
-         <a href="#"> <i class="fas fa-angle-right"></i> ask questions</a>
-         <a href="#"> <i class="fas fa-angle-right"></i> about us</a>
-         <a href="#"> <i class="fas fa-angle-right"></i> privacy policy</a>
-         <a href="#"> <i class="fas fa-angle-right"></i> terms of use</a>
-      </div>
-
-      <div class="box">
-         <h3>contact info</h3>
-         <a href="#"> <i class="fas fa-phone"></i> +123-456-7890 </a>
-         <a href="#"> <i class="fas fa-phone"></i> +111-222-3333 </a>
-         <a href="#"> <i class="fas fa-envelope"></i> shaikhanas@gmail.com </a>
-         <a href="#"> <i class="fas fa-map"></i> mumbai, india - 400104 </a>
-      </div>
-
-      <div class="box">
-         <h3>follow us</h3>
-         <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
-         <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
-         <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
-         <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
-      </div>
-
-   </div>
-
-   <div class="credit"> created by <span>mr. web designer</span> | all rights reserved! </div>
-
+<!-- bot -->
+<section>
+   <i class="fa fa-comment "></i>
+<img src="images/bot.png" alt="" class="chat-icon" width="50px" height="50px"">
+<div class="chat-popup">
+  <form class="chat-form" onsubmit="return submitForm(event)">
+    <input type="text" id="chat-input" placeholder="Tulis pesan anda disini...">
+    <button type="submit">Kirim</button>
+  </form>
+  <div id="chat-response"></div>
+</div>
+<!-- bot -->
 </section>
+   <!-- footer section starts  -->
 
-<!-- footer section ends -->
+   <section class="footer">
+
+      <div class="box-container">
+
+         <div class="box">
+            <h3>quick links</h3>
+            <a href="#"> <i class="fas fa-angle-right"></i> Beranda</a>
+            <a href="#about"> <i class="fas fa-angle-right"></i> tentang</a>
+            <a href="#destinasi"> <i class="fas fa-angle-right"></i> desitnasi</a>
+            <a href="#penginapan"> <i class="fas fa-angle-right"></i> penginapan</a>
+            <a href="#wahana"> <i class="fas fa-angle-right"></i> wahana</a>
+            <a href="#event"> <i class="fas fa-angle-right"></i> event</a>
+         </div>
+
+         <div class="box">
+            <h3>contact info</h3>
+            <a href="#"> <i class="fas fa-phone"></i> +62 823-9282-3072 </a>
+            <a href="#"> <i class="fas fa-phone"></i> +62 823-9282-3072 </a>
+            <a href="#"> <i class="fas fa-envelope"></i> Indahhusnul9@gmail.com </a>
+            <a href="#"> <i class="fas fa-map"></i> danau ranau, sumatera selatan </a>
+         </div>
+
+         <div class="box">
+            <h3>follow us</h3>
+            <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+            <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+            <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+            <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
+         </div>
+
+      </div>
+
+      <div class="credit"> created by <span>indah husnul khotimah</span> | all rights reserved! </div>
+
+   </section>
+
+   <!-- footer section ends -->
 
 
 
@@ -167,6 +175,7 @@
 
 <!-- custom js file link  -->
 <script src="js/script.js"></script>
+<script src="js/bot.js"></script>
 
 </body>
 </html>

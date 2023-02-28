@@ -50,3 +50,14 @@ loadMoreBtn.onclick = () =>{
       loadMoreBtn.style.display = 'none';
    }
 }
+chatInput.oninput = () => {
+   // menghapus chat dari satu user dan satu pesan respon bot
+   let userMessages = chatBox.querySelectorAll('.message.user');
+   let lastUserMessage = userMessages[userMessages.length - 1];
+   let botMessages = chatBox.querySelectorAll('.message.bot');
+   let lastBotMessage = botMessages[botMessages.length - 1];
+   if (lastUserMessage && lastBotMessage && lastUserMessage.previousSibling === lastBotMessage) {
+   chatBox.removeChild(lastUserMessage);
+   chatBox.removeChild(lastBotMessage);
+   }
+   };
